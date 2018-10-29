@@ -3,7 +3,7 @@ from ARIFISTIFIK import *
 from akad.ttypes import *
 from multiprocessing import Pool, Process
 from time import sleep
-import pytz, datetime, pafy, time, timeit, random, sys, ast, re, os, json, subprocess, threading, string, codecs, requests, tweepy, ctypes, urllib, wikipedia
+import pytz, datetime, pafy, time, timeit, random, sys, ast, re, os, json, subprocess, threading, string, codecs, requests, ctypes, urllib, wikipedia
 from datetime import timedelta, date
 from datetime import datetime
 from bs4 import BeautifulSoup
@@ -11,41 +11,41 @@ from googletrans import Translator
 import youtube_dl
 #ANTIJS_V2
 #cl = LineClient()
-cl = LineClient(authToken='MASUKAN TOKENMU DISINI')
+cl = LineClient(authToken='EyBPTTH18uw1BWy0C1s7.8T7kg5q2tr7uEk2N4rNmvW.cHsjpBUCEI04MFsroL3NGK5sjYUZatsUn1Fe+Vhrs4o=')
 cl.log("Auth Token : " + str(cl.authToken))
 channel = LineChannel(cl)
 cl.log("Channel Access Token : " + str(channel.channelAccessToken))
 
 #ki = LineClient()
-ki = LineClient(authToken='MASUKAN TOKENMU DISINI')
+ki = LineClient(authToken='Ey87oAkoLoKq3T00wH9d.OGpeN4qKTtNj5KwUPiAvJq.3k6lrZa0k+h+J7K/oT2zBBb/Ednx4b1bdzBnaFpVoDQ=')
 ki.log("Auth Token : " + str(ki.authToken))
 channel1 = LineChannel(ki)
 ki.log("Channel Access Token : " + str(channel1.channelAccessToken))
 
 #kk = LineClient()
-kk = LineClient(authToken='MASUKAN TOKENMU DISINI')
+kk = LineClient(authToken='EyyQ9jdf8ZRyXGyI05ka.NHbJJsI1BVgeG9s/VkXScG.DBEYgpJ5RXpRBRgllBL+VQ5MXSRWZqgX6YM8+otB1Gk=')
 kk.log("Auth Token : " + str(kk.authToken))
 channel2 = LineChannel(kk)
 kk.log("Channel Access Token : " + str(channel2.channelAccessToken))
 
 #kc = LineClient()
-kc = LineClient(authToken='MASUKAN TOKENMU DISINI')
+kc = LineClient(authToken='EypSGGMO4hxUvSZzUhz5.nglb8LTFfJq2OMTEUCeVfq.1ENkUtC5xgPYjYnb2wlGp2PcXvpem8DFTHwq3E15/Wo=')
 kc.log("Auth Token : " + str(kc.authToken))
 channel3 = LineChannel(kc)
 kc.log("Channel Access Token : " + str(channel3.channelAccessToken))
 
 #sw = LineClient()
-sw = LineClient(authToken='MASUKAN TOKENMU DISINI')
+sw = LineClient(authToken='Ey72cdAwPqvS1zmBhox2.XsFQg3e8TDhBUz/F3p5P8G.fuCpuSY7EiNe4I6R7wZ8wrGiKsxU79u3IhYMFWhwGMw=')
 sw.log("Auth Token : " + str(sw.authToken))
 channel11 = LineChannel(sw)
 sw.log("Channel Access Token : " + str(channel11.channelAccessToken))
 
 poll = LinePoll(cl)
 call = cl
-creator = ["ud296655acef67cbd5e8208e63629f78b"]
-owner = ["ud296655acef67cbd5e8208e63629f78b"]
-admin = ["ud296655acef67cbd5e8208e63629f78b"]
-staff = ["ud296655acef67cbd5e8208e63629f78b"]
+creator = ["u3dc65b6997363cb13c01941a14594103"]
+owner = ["u3dc65b6997363cb13c01941a14594103"]
+admin = ["u3dc65b6997363cb13c01941a14594103"]
+staff = ["u3dc65b6997363cb13c01941a14594103"]
 mid = cl.getProfile().mid
 Amid = ki.getProfile().mid
 Bmid = kk.getProfile().mid
@@ -317,9 +317,9 @@ def help():
                   "❧" + key + "Speed/Sp\n" + \
                   "❧" + key + "Sprespon\n" + \
                   "❧" + key + "Tagall\n" + \
-                  "❧" + key + "Joinall\n" + \
-                  "❧" + key + "Byeall\n" + \
-                  "❧" + key + "Byeme\n" + \
+                  "❧" + key + "Ikehven\n" + \
+                  "❧" + key + "Crotven\n" + \
+                  "❧" + key + "Cabut\n" + \
                   "❧" + key + "Leave「Namagrup」\n" + \
                   "❧" + key + "Ginfo\n" + \
                   "❧" + key + "Open\n" + \
@@ -424,7 +424,7 @@ def helpbot():
                   "❧" + key + "Bot3up「Kirim fotonya」\n" + \
                   "❧" + key + "Gift:「Mid korban」「Jumlah」\n" + \
                   "❧" + key + "Spam:「Mid korban」「Jumlah」\n" + \
-                  "❧ANTI JS V-2❧"
+                  "×Protect AntiJS By Raven¶"
     return helpMessage1
 
 def bot(op):
@@ -1309,7 +1309,7 @@ def bot(op):
                             if msg._from in admin:
                                 tz = pytz.timezone("Asia/Jakarta")
                                 timeNow = datetime.now(tz=tz)
-                                md = "❧ĐPĶ PŘØŤĘČŤÎØŇ❧\n"
+                                md = "RaveBot PŘØŤĘČŤÎØŇ❧\n"
                                 if wait["sticker"] == True: md+="❧Sticker「ON」\n"
                                 else: md+="❧Sticker「OFF」\n"
                                 if wait["contact"] == True: md+="❧Contact「ON」\n"
@@ -1344,7 +1344,7 @@ def bot(op):
 
                         elif cmd == "creator" or text.lower() == 'creator':
                             if msg._from in admin:
-                                cl.sendText(msg.to,"Creator Bot ARIFISTIFIK") 
+                                cl.sendText(msg.to,"Creator By Raven Ganteng") 
                                 ma = ""
                                 for i in creator:
                                     ma = cl.getContact(i)
@@ -1965,7 +1965,7 @@ def bot(op):
                                 except:
                                     pass
     
-                        elif cmd == "joinall":
+                        elif cmd == "?":
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                 G = cl.getGroup(msg.to)
@@ -1981,7 +1981,7 @@ def bot(op):
                                 G.preventedJoinByTicket = True
                                 kc.updateGroup(G)
 
-                        elif cmd == "byeall":
+                        elif cmd == ".":
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                 G = cl.getGroup(msg.to)
@@ -1990,7 +1990,7 @@ def bot(op):
                                 kk.leaveGroup(msg.to)
                                 kc.leaveGroup(msg.to)
                                 
-                        elif cmd == "byeme":
+                        elif cmd == "Cabut":
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                 G = cl.getGroup(msg.to)
